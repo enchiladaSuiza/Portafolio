@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Portafolio</title>
+</head>
+<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reconocimientos">Reconocimientos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#idiomas">Idiomas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<body id="inicio" class="pt-5">
+    <!-- Introducción -->
+    <section class="container-lg"> 
+        <div class="row justify-content-center align-items-center my-4">
+            <h1 class="display-4 text-center my-2">Santiago Vergara</h1>
+            <div class="col-md">
+                <img src="images/me.jpg" class="d-block img-fluid m-auto" alt="Selfie de Santiago">
+            </div>
+            <div class="col-md my-2">
+                <p class="display-6">Licenciado en Ciencias Computacionales</p>
+                <p class="h4">Egresado de la Universidad Autónoma del Estado de Hidalgo</p>
+                <p>¡Hola! Bienvenid@ a mi portafolio, un archivo de diferentes proyectos que he hecho (y de los que me siento orgulloso), reconocimientos y certificaciones. Espero poder ir haciéndolo más grande con el tiempo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="container-lg pt-1">
+        <hr class="my-1">
+        <h2 class="row mt-5 ms-4 display-5">Proyectos</h2>
+
+        <div class="row justify-content-center align-items-center my-3">
+            <div class="text-center mb-2">
+                <h3>Flashy</h3>
+                <h4 class="text-body-secondary">Aplicación simple de flashcards para Android</h4>
+            </div>
+            <div class="descripcion-proyecto col-md">
+                <p>El proyecto de fin de carrera que realicé junto con un amigo. Sirve para crear <i>flashcards</i>, esas en las que se escribe un concepto de un lado y su definición del otro, y que sirven mucho para estudiar. Tiene un sistema de repetición espaciada, donde la aplicación te pedirá estudiar cartas en intervalos de tiempo correspondientes a tu desempeño con esa carta, maximizando tu retención de memoria. Está inspirada en <a href="https://apps.ankiweb.net/">Anki</a>, y de cierta manera busca ser su alternativa simple.</p>
+                <ul class="lenguajes">
+                    <li>Kotlin</li>
+                    <li>SQLite</li>
+                </ul>
+                <ul class="links">
+                    <li><a href="https://github.com/enchiladaSuiza/Flashy">Repositorio</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.enchilada.flashy">Página en la Play Store</a></li>
+                </ul>
+            </div>
+            
+            <div id="carruselFlashy" class="carousel carousel-dark slide col-md">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/flashy1.png" class="d-block img-fluid m-auto" alt="Screenshot de Flashy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/flashy2.png" class="d-block img-fluid m-auto" alt="Screenshot de Flashy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/flashy3.png" class="d-block img-fluid m-auto" alt="Screenshot de Flashy">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselFlashy" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselFlashy" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center my-3">
+            <div class="text-center my-2">
+                <h3>Sistema de Control de Asistencia de la Fototeca Nacional</h3>
+                <h4 class="text-body-secondary">Programa de captura de entradas y salidas por medio de códigos QR</h4>
+            </div>
+
+            <div id="carruselAsistencia" class="carousel carousel-dark slide col-md">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/sinafo1.png" class="d-block img-fluid m-auto" alt="Screenshot del sistema de asistencia">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sinafo2.png" class="d-block img-fluid m-auto" alt="Screenshot del sistema de asistencia">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sinafo3.png" class="d-block img-fluid m-auto" alt="Screenshot del sistema de asistencia">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselAsistencia" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselAsistencia" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="descripcion-proyecto col-md">
+                <p>El proyecto que hice durante mi servicio social, para la <a href="https://mediateca.inah.gob.mx/islandora_74/islandora/object/fototeca:62">Fototeca Nacional</a> del INAH. Es un sistema para que los empleados de la Fototeca registren las entradas y salidas de su jornada laboral—básicamente un reloj checador—, por medio de códigos QR. El programa guarda un registro de todos los escaneos, sabe cuando alguien llegó tarde y por cuántos minutos. La idea era agilizar todo el proceso de identificar a los que llegaron tarde para descontarles los días [risa malvada].</p>
+                <ul class="lenguajes">
+                    <li>C++</li>
+                    <ul class="frameworks">
+                        <li>Qt Framework</li>
+                    </ul>
+                    <li>SQLite</li>
+                </ul>
+                <ul class="links">
+                    <li><a href="https://github.com/enchiladaSuiza/AsistenciaFototeca">Repositorio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center my-3">
+            <div class="text-center my-2">
+                <h3>Codificación Digital y Códigos de Línea</h3>
+                <h4 class="text-body-secondary">Herramienta para graficar códigos de línea según cadenas de texto, números y bits</h4>
+            </div>
+            <div class="descripcion-proyecto col-md">
+                <p>Este fue el proyecto final que hice para la materia de Comunicaciones en Redes (una materia muy difícil, por cierto). Supongo que todos sabemos que la información digital se transmite en ceros y unos. En el caso de los dispositivos electrónicos, estos ceros y unos toman la forma de cambios en la tensión del voltaje, y resulta que existen muchas formas de codificar la información mediante diferentes patrones de estos cambios. A estos se les llaman códigos de línea, y su principal propósito es la detección de errores y la sincronización en el intercambio de datos. Este programa permite visualizar diferentes codificaciones dada cualquier cadena de bits, y también puede convertir cadenas de textos o números a bits y mostrar su gráfica de voltaje correspondiente.</p>
+                <ul class="lenguajes">
+                    <li>Java</li>
+                    <ul class="frameworks">
+                        <li>JavaFX</li>
+                    </ul>
+                </ul>
+                <ul class="links">
+                    <li><a href="https://github.com/enchiladaSuiza/ProyectoCodificacion">Repositorio</a></li>
+                </ul>
+            </div>
+
+            <div id="carruselCodigos" class="carousel carousel-dark slide col-md">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/codigos1.png" class="d-block img-fluid m-auto" alt="Screenshot de programa de codificación digital">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/codigos2.png" class="d-block img-fluid m-auto" alt="Screenshot de programa de codificación digital">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/codigos3.png" class="d-block img-fluid m-auto" alt="Screenshot de programa de codificación digital">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselCodigos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselCodigos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center align-items-center my-3">
+            <div class="text-center my-2">
+                <h3>Transformaciones en 2D</h3>
+                <h4 class="text-body-secondary">Herramienta para graficar puntos y aplicarles desplazamiento, rotación y escala</h4>
+            </div>
+
+            <div id="carruselTransformaciones" class="carousel carousel-dark slide col-md">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/transformaciones1.png" class="d-block img-fluid m-auto" alt="Screenshot del programa de transformaciones">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/transformaciones2.png" class="d-block img-fluid m-auto" alt="Screenshot del programa de transformaciones">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/transformaciones3.png" class="d-block img-fluid m-auto" alt="Screenshot del programa de transformaciones">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselTransformaciones" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselTransformaciones" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="descripcion-proyecto col-md">
+                <p>Un pequeño proyecto que hice sobre una de mis áreas favoritas de la computación: los gráficos por computadora. Sirve para gráficar puntos en un lienzo y aplicarles los algoritmos básicos de transformación en dos dimensiones. Es divertido jugar un rato con él y tiene un modo a parte donde se puede ver una aplicación sencilla de las transformaciones—un reloj con una manecilla que se mueve, apuntando los segundos.</p>
+                <p></p>
+                <ul class="lenguajes">
+                    <li>Python</li>
+                    <ul class="frameworks">
+                        <li>PyQt</li>
+                    </ul>
+                </ul>
+                <ul class="links">
+                    <li><a href="https://github.com/enchiladaSuiza/Transformaciones">Repositorio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center my-3">
+            <div class="text-center my-2">
+                <h3>Algoritmos de Compresión de Datos</h3>
+                <h4 class="text-body-secondary">Colección de programas para codificar información mediante diferentes algoritmos</h4>
+            </div>
+            <div class="descripcion-proyecto col-md">
+                <p>Hice un repositorio en GitHub de todas las prácticas que nos pidieron para Compresión de Datos. Son programas en Python que toman información (por lo general texto) y la codifican usando diferentes algoritmos de compresión, como Huffman, PPM y codificación aritmética. El propósito de todos estos algoritmos es reducir lo más posible el espacio ocupado por archivos e información. Me costó algo de trabajo encontrar implementaciones simples de estos algoritmos, así que espero que este repositorio sirva como referencia quien busque programarlos.</p>
+                <ul class="lenguajes">
+                    <li>Python</li>
+                    <ul class="frameworks">
+                        <li>PyQt</li>
+                    </ul>
+                </ul>
+                <ul class="links">
+                    <li><a href="https://github.com/enchiladaSuiza/CompresionDeDatos">Repositorio</a></li>
+                </ul>
+            </div>
+
+            <div id="carruselCompresion" class="carousel carousel-dark slide col-md">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/codificacion1.png" class="d-block img-fluid m-auto" alt="Screenshot de un programa de codificación">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/codificacion2.png" class="d-block img-fluid m-auto" alt="Screenshot de un programa de codificación">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/codificacion3.png" class="d-block img-fluid m-auto" alt="Screenshot de un programa de codificación">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselCompresion" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselCompresion" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center my-3">
+            <div class="text-center my-2">
+                <h3>Organizador Ecológico</h3>
+                <h4 class="text-body-secondary">Aplicación de escritorio para administrar tareas</h4>
+            </div>
+            <div id="carruselOrganizador" class="carousel carousel-dark slide col-md">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/organizador1.png" class="d-block img-fluid m-auto" alt="Screenshot del organizador ecológico">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/organizador2.png" class="d-block img-fluid m-auto" alt="Screenshot del organizador ecológico">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/organizador3.png" class="d-block img-fluid m-auto" alt="Screenshot del organizador ecológico">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselOrganizador" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselOrganizador" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="descripcion-proyecto col-md">
+                
+                <p>Este es uno de los primeros programas que hice con unos amigos en Java... no recuerdo para qué materia. Es un organizador de tareas sencillo, y lo diseñamos con un diseño móvil en mente. Faltó pulirlo un poco pero me parece que quedó muy bonito.</p>
+                <img src="" alt=""><ul class="lenguajes">
+                    <li>Java</li>
+                    <ul class="frameworks">
+                        <li>Swing</li>
+                    </ul>
+                </ul>
+                <ul class="links">
+                    <li><a href="https://github.com/enchiladaSuiza/OrganizadorEco">Repositorio</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificados -->
+    <section id="reconocimientos" class="container-lg text-center pt-1">
+        <hr class="my-1">
+        <h2 class="row justify-content-end mt-5 ms-4 display-5">Reconocimientos</h2>
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md m-5">
+                <h4>Premio Ceneval al desempeño de excelencia EGEL</h4>
+                <img src="images/ceneval.png" class="d-block img-fluid m-auto" alt="Certificado Cenenval">
+            </div>
+            <div class="col-md m-5">
+                <h4>Mención Honorable por la participación en el Gran Premio de México 2022 ICPC</h4>
+                <img src="images/ICPC2023.png" class="d-block img-fluid m-auto" alt="Reconocimiento ICPC 2022">
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md m-5">
+                <h4>96a posición en el Gran Premio de México 2023 ICPC</h4>
+                <img src="images/ICPC2024.png" class="d-block img-fluid m-auto" alt="Reconocimiento ICPC 2023">
+            </div>
+            <div class="col-md m-5">
+                <h4>3er lugar en el concurso de programación Hackaton</h4>
+                <img src="images/hackaton.png" class="d-block img-fluid m-auto" alt="Reconocimiento Hackaton">
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md m-5">
+                <h4>Participación en el campamento de programación competitiva 2022</h4>
+                <img src="images/campamento.png" class="d-block img-fluid m-auto" alt="Reconocimiento campamento de programación">
+            </div>
+        </div>
+    </section>
+
+    <!-- Idiomas -->
+    <section id="idiomas" class="container-lg text-center pt-1">
+        <hr class="my-1">
+        <h2 class="row mt-5 ms-4 display-5">Idiomas</h2>
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md m-5">
+                <h4>Inglés nivel B2 (PET)</h4>
+                <img src="images/ingles.png" class="d-block img-fluid m-auto" alt="Reconocmiento inglés nivel B2">
+            </div>
+            <div class="col-md m-5">
+                <h4>Japonés nivel N5 (JLPT)</h4>
+                <img src="images/japones.png" class="d-block img-fluid m-auto" alt="Reconocimiento japonés nivel N5">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="container-lg pt-1">
+        <hr class="my-1">
+        <h2 class="row mt-5 mb-4 ms-4 display-5">Sobre mí</h2>
+
+        <div class="row">
+            <div class="col-md">
+                <p>Tengo 22 años y vivo en Pachuca, Hidalgo. Las ciencias computacionales me apasionan con desenfreno, en particular los gráficos por computadora, el diseño orientado a objetos y la teoría de autómatas. Otros campos que me interesan mucho son las matemáticas y la lingüística. Entre mis intereses más ociosos están los videojuegos, el anime, el manga y las novelas. Mi sueño es visitar Japón algún día. Ah, ¡y las enchiladas son la mejor comida del mundo!</p>
+                <p>Mi <a href="https://github.com/enchiladaSuiza">Github</a>, mi <a href="https://www.facebook.com/imthescatmanskibidibbydibyodadubdubyodadubdub/">Facebook</a> y mi correo electrónico: <a href="mailto:santiagovrlr@gmail.com">santiagovrlr@gmail.com</a>.</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
